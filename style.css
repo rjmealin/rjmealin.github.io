@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+    margin:0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header { 
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
+    border-bottom: #000000 solid 1px;
+}
+.header > div:first-of-type {margin-left: 30px;}
+.header > div:first-of-type > a > img {height: 80px; margin-top:5px;}
+.header > div:last-of-type{ display: flex; align-content: center; justify-content: flex-end; flex-direction: row; margin-right: 30px;}
+.header > div:last-child > div {padding: 15px;}
+.header > div:last-child > div > a { text-decoration: none; font-size: 18px; transition: all 0.25s;}
+.header > div:last-child > div > a:hover {text-shadow: #888888 1px 1px 1px;}
+.header > div:last-child > div > a:visited { color:#000000; }
+
+.banner {
+    min-height: 350px;
+    border-bottom: #000000 solid 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("media/banner2.JPG");
+    background-position-y: -475px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    
+}
+.banner > div { background: rgba(255,25,255,0.5); width: 400px; height: 200px; display: flex; justify-content: flex-end; align-items: center; padding:30px;}
+.banner > div > div {width:80%;}
+
+
+.body {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-wrap: wrap;
+}
+.body > div {width:80%; border: #000000 solid 1px; margin: 15px; height: 300px; display: flex; flex-wrap: wrap; justify-content: center; align-items: center;}
+.body > div > p {width:80%; font-size: 30px; text-align: center;}
+@media only screen and (max-width:1300px) {
+    .body > div {width: 30%;}
+}
+@media only screen and (max-width:1000px) {
+    .body > div { width:40%;}
+}
+
+.footer {
+    height:150px; 
+    border-top: #000000 solid 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer > div {margin:30px;}
