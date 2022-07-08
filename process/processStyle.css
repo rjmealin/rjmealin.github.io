@@ -23,15 +23,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background-image: url("../media/images.png"); */
+    background-image: url("../media/process-banner.jpg");
     background-position-y: -500px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: center;
-    background-color: #88d3bf;
-    
 }
-.banner > div:first-of-type { font-size: 30px; position: absolute; background-color: rgba(255,255,255, 0.6); border-radius: 10px; padding:15px;}
+
+.banner > div:first-of-type {color:white; font-size: 50px; background-color: rgba(0,0,0, 0.6); }
 .banner > div:last-of-type {display: flex; flex-wrap: nowrap; width:100%;}
 .banner > div:last-of-type > img {height:300px; display: block;}
 .banner > div:last-of-type > img:nth-of-type(1) {width:40%;}
@@ -52,13 +51,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     padding:60px;
 }
 .process > a { 
     border: solid #000000 1px; 
-    width: 30%; 
+    width: 70vh; 
     margin: 30px; 
-    height:400px;
+    height:60vh;
     border-radius: 10px;
     box-shadow: #264653 1px 1px 10px;
     display: flex;
@@ -89,12 +89,20 @@
     background-image: url(../media/cleargems.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
-}.process > a:nth-of-type(3){
+}
+.process > a:nth-of-type(3){
     background-image: url(../media/new-rainbow-fib.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position-x: center;
 }
+.process > a:nth-of-type(4){
+    background-image: url(../media/hybrid-pic.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
 
 .process-explained {
    text-align:center;
@@ -106,14 +114,20 @@
 }
 
 
-.idea { display: flex; align-items: center; justify-content: center; padding: 0px 60px 0px 60px; height:1900px;}
-.idea > div {border: #000000 solid 1px; margin:30px; display: flex; align-items: center;justify-content: center; flex-direction: column; padding:30px; }
+
+.idea > div {display: flex; align-items: center;justify-content: center; flex-direction: column; padding:30px; }
 .idea > div > p {line-height: 25px; padding:30px;}
-.idea > div > div {width: 80%; height: 400px; border: #000000 solid 1px; display: flex; justify-content: center; align-items: center;} 
+.idea > div > div {width: 80%; height: 400px; /*border: #000000 solid 1px;*/ display: flex; justify-content: center; align-items: center;} 
 .idea > div > h3 { padding: 30px 0 0 0; text-align: center;}
 
 #dual-pane { border: none; width: 80%; height: 300px; display: flex; justify-content: center; align-items: center;}
-#dual-pane > div { width: 40%; height: 300px; margin: 15px; border:#000000 solid 1px;}
+#dual-pane > div { 
+    width: 40%; 
+    height: 300px; 
+    margin: 15px; 
+    /*border:#000000 solid 1px;*/
+    box-shadow: #264653 1px 1px 10px;
+}
 #dual-pane > div > img {
     width:100%;
     height: 100%;
