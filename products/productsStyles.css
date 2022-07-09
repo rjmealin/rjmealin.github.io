@@ -174,22 +174,28 @@
     width:100%;
     display: flex;
     justify-content: center;
-    align-items:flex-end;
+    align-items:center;
+    flex-wrap: wrap;
 
 }
 .product-info > p {
-    visibility: hidden;
-    color:blue;
-    text-align: center;
+    opacity: 0;
+    color:white;
+    font-size: 40px;
     transition: all 0.25s;
     width: 100%;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
+    height: 100%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-width: 0;
 }
 .product-info:hover > p {
-    visibility: visible;
-    color:red;
-    background-color: rgba(100,100,100, 0.5);
+    opacity: 1;
+    color:white;
+    background-color: rgba(0,0,0, 0.5);
 
 }
 #productDialog {

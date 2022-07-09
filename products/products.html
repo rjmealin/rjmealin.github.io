@@ -88,14 +88,16 @@
     let productArray = productContainer.children;
     let dialogBox = document.getElementById("productDialog")
     let dialogDiv = document.getElementById("dialogDiv")
-    console.log(productArray);
 
     for (i = 0; i < productArray.length; i++){
         productArray[i].addEventListener('click', function(event){
             
-            let image = window.getComputedStyle(event.path[1]).getPropertyValue("background-image")
+                        
+            let image = window.getComputedStyle(event.path[2]).getPropertyValue("background-image")
+
             let imageString = image.toString();
             let index = imageString.indexOf("/media");
+            
             let slicedString = imageString.slice(index, -2);
             let newUrl =  'url(..' + slicedString + ')'
             dialogDiv.style.backgroundImage = newUrl;
