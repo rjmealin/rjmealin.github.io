@@ -14,7 +14,15 @@
             <a href="../index.html"><img src="../media/cropped-logo.png"></a>
         </div>
         <div>
-            <div><a href="../process/process.html">Our Process</a></div>
+            <div class="dropdown">
+                <a href="../process/process.html">Our Process</a>
+                <ul>
+                    <li><a href="../process/galaxy.html">Galaxy Ball Run</a></li>
+                    <li><a href="../process/fib.html">Fibonacci Rings</a></li>
+                    <li><a href="../process/gemblocks.html">Gem Blocks</a></li>
+                    <li><a href="../process/shapesorter.html">Shape sorter</a></li>
+                </ul>
+            </div>
             <div><a href="../products/products.html">Our Products</a></div>
             <div><a href="../story/story.html">Our wonderful story!</a></div>
             <div><a href="../contact-us/contact.html">Contact Us</a></div>
@@ -24,71 +32,84 @@
         <div>
             <p>Galaxy Ball Run</p>
         </div>
-        <div>
+        <!-- <div>
             <img src="../media/galaxy-cad.png" alt="">
             <img src="../media/galaxy-prod.jpg" alt="">
             <img src="../media/galaxy-final.jpg" alt="">
-        </div>
+        </div> -->
     </div>
     <div class="video">
-        <video controls width="600">
+        <video width="600" id="processVid">
             <source src="../media/galaxy-vid.mp4">
+            
         </video>
+        <div id="videoButton" onclick="playVideo()"></div>
     </div>
-
-    <div>
-        <div class="idea">
-            <div>
-                <h3>How we came up with the idea</h3>
-                <p>(movie of galaxy)The galaxy was one of our first toys, and also our favorite. At first, it seemed like such a simple idea:
-                     create a wooden version of the Spiral Wishing Wells that you might find
-                    at a children's museum. The motion of the coin is so entrancing for kids and we wanted to replicate it. 
-                    We also loved how the motion mimicked objects orbitting in space. However, this toy was tough to develop. 
-                    (pic of Wishing Well toy)
-                </p>
-                <div></div>
-                <p>One of our first problems was designing how steep to make the incline.
-                    If we made it too steep, then the ball wouldn't rotate for very long. If 
-                    we made the incline too shallow, then the ball would lose mementium. (
-                        insert part here from Rhett about how he picked the slope). Eventually,
-                        we found the perfect slope and the kids absolutely loved it.
-                    (pic of CAD, especially one of different designs</p>
-                <div id="dual-pane">
-                    <div><img src="../media/galaxy-cad.png"/></div>
-                    <div><img src="../media/galaxy-prod.jpg"/></div>
-                </div>
-                
-                <p>Our next step was to find out how to make the the ball run stand up. We 
-                    thought about making a solid shape base, like a cylinder, but that didn't 
-                    seem stable enought. We finally settled on three columns that were threaded
-                    so that they could be removed for shipping. It was always a huge hurdle
-                    to design toys that looked good, were fun to play with, and could
-                    easily ship. (pic of upside downn of ball run)
-                </p>
-                <div id="dual-pane">
-                    <div><img src="../media/galaxy legs.jpg"/></div>
-                    <div><img src="../media/gal-upsidedown.jpg"/></div>
-                </div>
-                <p>This toy has been our biggest seller, and is still our
-                    most requested toy. We love the open endedness of the toy combined with
-                    it's effectiveness as a learning manipulative.  
-                    As an added bonus, we found that marbles, spinning tops, and other toys 
-                    work really well and are fun to watch orbit. (pic or movie of ball run 
-                    marbles and spinning top)
-                </p>
-                <p>
-                    Since the Galaxy Ball Run was such a big seller, we decided to try a few more
-                    simple ball runs. We made a (insert Rhett's part) and an elliptical ball run.
-                    Both turned out really well, and we love their simplicity.
-                </p>
+    <div class="idea">
+        <div>
+            <p>(movie of galaxy)The galaxy was one of our first toys, and also our favorite. At first, it seemed like such a simple idea:
+                 create a wooden version of the Spiral Wishing Wells that you might find
+                at a children's museum. The motion of the coin is so entrancing for kids and we wanted to replicate it. 
+                We also loved how the motion mimicked objects orbitting in space. However, this toy was tough to develop. 
+                (pic of Wishing Well toy)
+            </p>
+            <div><img src="../media/new-wishing-well.jpeg"/></div>
+            <p>One of our first problems was designing how steep to make the incline.
+                If we made it too steep, then the ball wouldn't rotate for very long. If 
+                we made the incline too shallow, then the ball would lose mementium. (
+                    insert part here from Rhett about how he picked the slope). Eventually,
+                    we found the perfect slope and the kids absolutely loved it.
+                (pic of CAD, especially one of different designs</p>
+            <div id="dual-pane">
+                <div><img src="../media/galaxy-cad.png"/></div>
+                <div><img src="../media/galaxy-prod.jpg"/></div>
             </div>
+            
+            <p>Our next step was to find out how to make the the ball run stand up. We 
+                thought about making a solid shape base, like a cylinder, but that didn't 
+                seem stable enought. We finally settled on three columns that were threaded
+                so that they could be removed for shipping. It was always a huge hurdle
+                to design toys that looked good, were fun to play with, and could
+                easily ship. (pic of upside downn of ball run)
+            </p>
+            <div id="dual-pane">
+                <div><img src="../media/galaxy legs.jpg"/></div>
+                <div><img src="../media/gal-upsidedown.jpg"/></div>
+            </div>
+            <p>This toy has been our biggest seller, and is still our
+                most requested toy. We love the open endedness of the toy combined with
+                it's effectiveness as a learning manipulative.  
+                As an added bonus, we found that marbles, spinning tops, and other toys 
+                work really well and are fun to watch orbit. (pic or movie of ball run 
+                marbles and spinning top)
+            </p>
+            <p>
+                Since the Galaxy Ball Run was such a big seller, we decided to try a few more
+                simple ball runs. We made a (insert Rhett's part) and an elliptical ball run.
+                Both turned out really well, and we love their simplicity.
+            </p>
         </div>
     </div>
+
+
     <div class="footer">
         <div><a href="https://www.facebook.com"><i class="fa fa-facebook-square fa-3x"></i></a></div>
         <div><a href="https://www.etsy.com/shop/Rosebudtoyco?ref=simple-shop-header-name&listing_id=935206574"><i class="fa fa-etsy fa-3x"></i></a></div>
         <div><a href="https://www.instagram.com/rosebud_woodworking/?hl=en"><i class="fa fa-instagram fa-3x"></i></a></div>
         <div><i class=""></i></div>
     </div>
+    <script>
+        let video = document.getElementById("processVid");
+        let button = document.getElementById("videoButton")
+        function playVideo(){
+            button.style.display = 'none';
+            video.muted = true;
+            video.style.opacity = 1;
+            video.play()
+        }
+        video.onended = () => {
+            button.style.display = 'block';
+        }
+    </script>
 </body>
 </html>

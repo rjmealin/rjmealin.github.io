@@ -14,7 +14,15 @@
             <a href="../index.html"><img src="../media/cropped-logo.png"></a>
         </div>
         <div>
-            <div><a href="../process/process.html">Our Process</a></div>
+            <div class="dropdown">
+                <a href="../process/process.html">Our Process</a>
+                <ul>
+                    <li><a href="../process/galaxy.html">Galaxy Ball Run</a></li>
+                    <li><a href="../process/fib.html">Fibonacci Rings</a></li>
+                    <li><a href="../process/gemblocks.html">Gem Blocks</a></li>
+                    <li><a href="../process/shapesorter.html">Shape sorter</a></li>
+                </ul>
+            </div>
             <div><a href="../products/products.html">Our Products</a></div>
             <div><a href="../story/story.html">Our wonderful story!</a></div>
             <div><a href="../contact-us/contact.html">Contact Us</a></div>
@@ -25,10 +33,16 @@
             <p>Hybrid Shape Sorter</p>
         </div>
     </div>
+    <div class="video">
+        <video width="600" id="processVid">
+            <source src="../media/hybrid-movie.mp4">
+            
+        </video>
+        <div id="videoButton" onclick="playVideo()"></div>
+    </div>
     <div>
         <div class="idea">
             <div>
-                <h3>How we came up with the idea</h3>
                 <p>
                  This idea came to us through a math video on youtube. My husband loves math videos and is constantly watching them in his free time, and it finally paid off. We watched a video where
                     a man with a resin printer was expaining intersectional shapes and how you could potentially make a kids toy out of it. However, he couldn't find a geometry where each side
@@ -47,9 +61,7 @@
                 <div id="dual-pane">
                     <div><img src="../media/hybrid-display.jpg"/></div>
                     <div>
-                        <video controls width="100%" height="100%">
-                            <source src="../media/hybrid-movie.mp4">
-                        </video>
+
                     </div>
                 </div>
             </div>
@@ -61,5 +73,18 @@
         <div><a href="https://www.instagram.com/rosebud_woodworking/?hl=en"><i class="fa fa-instagram fa-3x"></i></a></div>
         <div><i class=""></i></div>
     </div>
+    <script>
+        let video = document.getElementById("processVid");
+        let button = document.getElementById("videoButton")
+        function playVideo(){
+            button.style.display = 'none';
+            video.muted = true;
+            video.style.opacity = 1;
+            video.play()
+        }
+        video.onended = () => {
+            button.style.display = 'block';
+        }
+    </script>
 </body>
 </html>
