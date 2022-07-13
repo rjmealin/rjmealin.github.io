@@ -73,6 +73,23 @@
     color: white;
     text-shadow: #000000 1px 1px 5px;
 }
+@media only screen and (max-width:1180px){
+    .banner{
+        background-size:100% 200%;
+        background-position-y: -350px;
+        
+    }
+}
+@media only screen and (max-width:800px){
+    .banner{
+        background-size:150% 200%;
+        background-position-y: -325px;
+        
+    }
+} 
+
+
+
 
 .story {
     padding:120px;
@@ -84,7 +101,37 @@
 .story > p {
     margin:30px;
 }
+@media only screen and (max-width:1280px) {
+    .story {
+        padding:60px;
+        margin:80px;
 
+    }
+    .story > p {
+        margin:40px
+}
+}
+@media only screen and (max-width:840px) {
+    .story {
+        padding:30px;
+        margin:40px;
+
+    }
+    .story > p {
+        margin:20px
+}
+}
+@media only screen and (max-width:550px) {
+    .story {
+        padding:0px;
+        margin:0px;
+        border-radius: 0px;
+
+    }
+    .story > p {
+        margin:20px
+}
+}
 
 
 .footer {
