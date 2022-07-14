@@ -3,10 +3,10 @@
     margin:0px;
     font-family: serif;
 }
-/* body{opacity: 0;} */
-p {
-    font-family: sans-serif;
+a {
+    color:#000000;
 }
+/* body{opacity: 0;} */
 .header { 
     display: flex; 
     justify-content: space-between;
